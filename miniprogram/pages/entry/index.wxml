@@ -1,0 +1,44 @@
+<!--pages/index2/index.wxml-->
+<view class='main1'>
+  <text style='text-align:center;color:red;width:100%'>点 将 台</text>
+  <view wx:for = '{{displayPlayers}}' wx:for-item='g' wx:key='id' class='{{g.style}}'>
+    <view wx:for = '{{g.players}}' wx:key = 'img' class='playerContainer' bindtap='onPick' id = '{{item.id}}'>
+      <image class="playerImage" src='{{item.img}}'></image>
+      <image class='pickedMask' src='img/blue-pick.jpg' wx:if='{{item.picked=="A"}}'></image>
+      <image class='pickedMask' src='img/red-pick.jpg' wx:if='{{item.picked=="B"}}'></image>
+      <view class='playerName'><text>{{item.name}}</text></view>
+    </view>
+  </view>
+  <image class='.background-img' src='img/back-main1.jpeg' mode='scaleToFill'></image>
+</view>
+<view class='message' style='color:{{picking.color}}'>{{picking.message}}</view>
+<view class='main2'>
+  <view class='groupA'>
+    <image class='.back2' src='img/back-blue.jpeg'></image>
+    <text class='teamName' style='color:blue'>蓝队</text>
+    <view class='picked'>
+      <view class='playerSmall' wx:for = '{{teamA}}' wx:key='id'>
+        <image class="playerImageSmall" src='{{item.img}}'></image>
+        <view class='playerNameSmall'><text>{{item.name}}</text></view>
+      </view>
+    </view>
+  </view>
+  <view class='picking'>
+    <view wx:if = '{{picking.id > 0}}'>
+      <image class='playerImageBig' src='{{picking.img}}'></image>
+      <view class='playerNameBig'><text>{{picking.name}}</text></view>
+      <view class='description'><text>{{picking.description}}</text></view>
+      <button disabled='{{!picking.canSelect}}' type='primary' bindtap='onConfirm' style='width:200rpx;height:80rpx'>确认</button>
+    </view>
+  </view>
+  <view class='groupB'>
+    <image class='.back2' src='img/back-red.jpeg'></image>
+    <text class='teamName' style='color:red'>红队</text>
+    <view class='picked'>
+      <view class='playerSmall' wx:for = '{{teamB}}' wx:key='id'>
+        <image class="playerImageSmall" src='{{item.img}}'></image>
+        <view class='playerNameSmall'><text>{{item.name}}</text></view>
+      </view>
+    </view>
+  </view>
+</view>

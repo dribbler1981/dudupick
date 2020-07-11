@@ -1,0 +1,227 @@
+/* pages/index2/index.wxss */
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.main1 {
+  height: 600rpx;
+  width: 750rpx;
+  /* width: 100%; */
+  /* background: rgb(29, 23, 46); */
+  border: 1px solid rgba(22, 134, 11, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  transition: all 300ms ease;
+}
+.background-img {
+  position: absolute;  
+  height: 600rpx;
+  width: 750rpx;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+
+
+.group_1_person {
+  /* margin-top: 40rpx; */
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;  
+  height: 120rpx;
+  width: 100rpx;
+  /* width: 100%; */
+  background: #aaf;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+}
+.group_2_people {
+  /* margin-top: 40rpx; */
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  height: 120rpx;
+  width: 200rpx;
+  /* width: 100%; */
+  background: #aaf;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+}
+
+.playerContainer {
+  margin-top: 0;
+  margin-right: 0;
+  padding: 0;
+  height: 120rpx;
+  width: 100rpx;
+  background: #0af;
+  border: 1px solid rgba(0, 255, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  transition: all 300ms ease;
+}
+.playerImage {
+  height: 100rpx;
+  width: 100rpx;
+  /* width: 100%; */
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.pickedMask {
+  position: absolute;
+  margin: 0rpx;
+  height: 30rpx;
+  width: 30rpx;
+  /* width: 100%; */
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.playerName {
+  height: 20rpx;
+  width: 100rpx;
+  /* width: 100%; */
+  background: rgb(112, 98, 233);
+  border: 1px solid rgba(255, 0, 0, 0.1);
+  font-size: 18rpx;
+  text-align: center;
+}
+.message {
+  margin-top: 10rpx;
+  text-align: center;
+  height: 30rpx;
+  font-size: 25rpx;
+  color: green;
+}
+.main2 {
+  height: auto;
+  width: 750rpx;
+  /* width: 100%; */
+  border: 1px solid rgba(22, 134, 11, 0.1);
+  display: flex;
+}
+.groupA {
+  width: 200rpx;
+  height: 590rpx;
+  /* background: rgb(25, 32, 136); */
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 3rpx;
+  border-color: green;
+  border-radius: 20rpx;  
+}
+.back2 {
+  position: absolute;  
+  width: 200rpx;
+  height: 590rpx;
+  opacity: 0.5;
+  z-index: -1;
+}
+.teamName {
+  height: 50rpx;
+  width: 200rpx;
+  text-align:center;  
+}
+.picked {
+  height: 540rpx;
+  width: 200rpx;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;  
+  padding-left: 10rpx;
+}
+.picking {
+  width: 350rpx;
+  height: 590rpx;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.description {
+  width: 300rpx;
+  height: 120rpx;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 20rpx;
+}
+
+.groupB {
+  width: 200rpx;
+  height: 590rpx;  
+  /* background: rgb(207, 60, 72); */
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 3rpx;
+  border-color: green;
+  border-radius: 20rpx;
+}
+.playerSmall {
+  height: 80rpx;
+  width: 60rpx;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+.playerImageSmall {
+  height: 60rpx;
+  width: 60rpx;
+  /* background: #fff; */
+  /* border: 3px solid rgba(0, 0, 0, 0.1); */
+  margin: 0;
+}
+.playerNameSmall {
+  height: 20rpx;
+  width: 60rpx;
+  margin: 0;
+  padding: 0;
+  /* width: 100%; */
+  background: rgb(112, 98, 233);
+  /* border: 3px solid rgba(255, 0, 0, 0.1); */
+  font-size: 16rpx;
+  text-align: center;
+}
+.playerImageBig {
+  height: 300rpx;
+  width: 300rpx;
+  margin: 0;
+  /* width: 100%; */
+  /* background: #fff; */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.playerNameBig {
+  height: 50rpx;
+  width: 300rpx;
+  /* width: 100%; */
+  background: rgb(112, 98, 233);
+  border: 1px solid rgba(255, 0, 0, 0.1);
+  font-size: 40rpx;
+  text-align: center;
+}
